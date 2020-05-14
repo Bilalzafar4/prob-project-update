@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prob Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/byFile.css">
+    <link rel="stylesheet" href="css/histogram.css">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Particles </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+  <link href="hospital.css" rel="stylesheet">
+  <link rel="stylesheet" href="css1/general.css">
+    <link rel="stylesheet" href="css1/byFile.css">
+    <link rel="stylesheet" href="css1/histogram.css">
+
+
+
+
+</head>
+
+<body >
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Population Survey </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="a.html">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="b.html">Statistical Tools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="c.html">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+     <button type="button" class="btn btn-outline-primary waves-effect">Literacy Rate</button>
+     <button type="button" class="btn btn-outline-default waves-effect">Male Female literacy Rate</button>
+     <button type="button" class="btn btn-outline-secondary waves-effect">0-6 year population by states</button>
+     <button type="button" class="btn btn-outline-success waves-effect">Male Female population by states</button>
+     <button type="button" class="btn btn-outline-info waves-effect">Total population by states</button>
+     <button type="button" class="btn btn-outline-warning waves-effect"> Difference in Male and Female literacy Rate</button>
+
+    </header>
+	  <div class="container">
+        <div class="selectDataFile">
+            <span>Select Your .csv file to perform statistical operations. </span>
+           <button type="button" class="btn btn-outline-primary waves-effect"><input type="file" id="files" name="files[]" multiple /></button>
+        </div>
+    </div>
+
+    <div id="data" class="fileData">
+        <h2 id="filename">Data</h2>
+        <div class="Container">
+            <table id="table"></table>
+        </div>
+    </div>
+
+    <div class="bgBorder">
+        <div class="container">
+            <div id="ftColumn" class="selectColumn">
+              <label for="exampleForm2">Enter Column Name to Find Frequency Table</label>
+                <input type="text" class="form-control" name="column" id="column">
+                <div class="button" id="calculateFrequencyTable">Send</div>
+            </div>
+        </div>
+    </div>
+    <!-- Default input -->
+
+    <div class="container">
+        <div class="frequencyTablesContainer" id="frequencyTablesContainer">
+        </div>
+    </div>
+
+
+<div class="bgBorder">
+    <div class="container">
+        <div id="ftColumn" class="selectColumn">
+          <label for="exampleForm2">Enter First Column Name</label>
+            <input type="text" class="form-control" name="column" id="column1">
+            <label for="exampleForm2">Enter Second Column Name</label>
+              <input type="text" class="form-control" name="column" id="column2">
+            <div class="button" id="calculateFrequencyTable1">Ttest </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="frequencyTablesContainer1" id="frequencyTablesContainer1">
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js" ></script>
+
+    <script src="js1/variables.js"></script>
+    <script src="js1/d3.js"></script>
+    <script src="js1/chart.js"></script>
+    <script src="js1/chartjs.js"></script>
+    <script src="js1/meanAndStandardDeviation.js"></script>
+    <script src="js1/functions.js"></script>
+    <script src="js1/data.js"></script>
+    <script src="js1/table.js"></script>
+    <script src="js1/histogram.js"></script>
+    <script src="js1/user/componentChart.js"></script>
+    <script src="js1/user/pieChart.js"></script>
+    <script src="js1/user/multipleChart.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
